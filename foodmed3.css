@@ -1,0 +1,151 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font for the entire page */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Default text color */
+}
+
+/* Style the header with background color, centered text, and navigation links */
+header {
+    background-color: #695adc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style sections with padding, background color, and border */
+section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+/* Style h2 headings with a background color */
+h2 {
+    background-color: #6b33cd;
+    color: #fff;
+    padding: 30px;
+    font-size: 24px; /* Adjust heading font size */
+    text-align: center; /* Center the headings */
+}
+
+/* Style images to center them within sections */
+img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* Style form elements for consistent alignment and appearance */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: #333; /* Default label text color */
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    height: 40px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type="submit"] {
+    background-color: #300dcb;
+    color: #fff;
+    padding: 20px 30px;
+    border: 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: auto;
+    display: block; /* Center the submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Style the table for a neat appearance */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font: bold;
+    padding-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Add alternating row colors to the table for readability */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style the recipe submission form */
+#submit-recipe form {
+    text-align: center; /* Center the form elements */
+}
+
+#submit-recipe h2 {
+    background-color: #7b45c2;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    h2 {
+        font-size: 20px; /* Decrease heading font size on smaller screens */
+    }
+    img {
+        max-width: 80%; /* Adjust max-width for images on smaller screens */
+    }
+}
